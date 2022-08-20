@@ -25,7 +25,7 @@ document.getElementById('save-button').addEventListener('click', function(){
     const newbalance = getTextElementValueById('balance');
 
     if(saveInput > 100){
-        alert("Save 100% over is not possible");
+        alert("100% over save is not possible");
         return
     }
     const newSaveAmount = totalIncome * (saveInput / 100);
