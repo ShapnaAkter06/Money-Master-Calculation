@@ -9,46 +9,51 @@
 </head>
 <body>
     <header>
-        <h1 class="text-5xl font-medium text-center mt-12 text-teal-500">Money Master</h1>
+        <h1 class="text-5xl font-medium text-center mt-12 text-teal-500 mb-12">Money Master</h1>
     </header>
     <main>
-        <section class="bg-slate-100 w-9/12 mx-auto mt-12 p-8 text-center">
-             <!-- Income -->
-             <h2 class="text-3xl font-medium mb-2">Income</h2>
-             <span>Income :</span>
-             <input id="total-income" class="bg-slate-200 px-2 py-2" type="text">
-
-             <!-- Expenses -->
-             <h2 class="text-3xl font-medium mb-2 mt-8">Expenses</h2>
-             <div class="mb-4">
-                <span>Food :</span>
-                <input id="food-expenses" class="bg-slate-200 px-2 py-2" type="text">
-             </div>
-             <div class="mb-4">
-                <span>Rent :</span>
-                <input id="rent-expenses" class="bg-slate-200 px-2 py-2" type="text">
-             </div>
-             <div class="mb-4">
-                <span>Cloth :</span>
-                <input id="cloth-expenses" class="bg-slate-200 px-2 py-2" type="text">
-             </div>
-
-             <!-- Calculation -->
-             <button id="calculate-button" class="bg-indigo-400 hover:bg-sky-700 px-8 py-2 text-white font-medium rounded-lg">Calculate</button>
-
-            <h3 class="text-3xl font-medium mb-2 mt-8">Tota Expenses: <span id="total-expenses">0</span></h3>
-            <h3 class="text-3xl font-medium mb-8 mt-4">Balance: <span id="balance">0</span></h3>
-
-            <!-- Save -->
-            <div class="mb-4">
-                <span>Save :</span>
-                <input id="save-input" class="bg-slate-200 px-2 py-2" type="text">
-                <span>%</span>
-                <button id="save-button" class="bg-indigo-400 hover:bg-sky-700 px-8 py-2 text-white font-medium rounded-lg">Save</button>
-             </div>
-
-            <h3 class="text-3xl font-medium mb-2 mt-8">Saving Amount: <span id="save-amount">0</span></h3>
-            <h3 class="text-3xl font-medium mb-8 mt-4">Remaining Balance: <span id="remaining-balance">0</span></h3>
+        <section class="grid grid-cols-2 mx-24 shadow-lg shadow-gray-400">
+            <div>
+                <img class="w-full" src="/money.jpg" alt="">
+            </div>
+            <div class="bg-slate-100 p-8 text-center">
+                 <!-- Income -->
+                 <h2 class="text-2xl font-medium mb-2">Income</h2>
+                 <span>Income :</span>
+                 <input id="total-income" class="bg-slate-200 px-2 py-2" type="text">
+    
+                 <!-- Expenses -->
+                 <h2 class="text-2xl font-medium mb-2 mt-8">Expenses</h2>
+                 <div class="mb-4">
+                    <span>Food :</span>
+                    <input id="food-expenses" class="bg-slate-200 px-2 py-2" type="text">
+                 </div>
+                 <div class="mb-4">
+                    <span>Rent :</span>
+                    <input id="rent-expenses" class="bg-slate-200 px-2 py-2" type="text">
+                 </div>
+                 <div class="mb-4">
+                    <span>Cloth :</span>
+                    <input id="cloth-expenses" class="bg-slate-200 px-2 py-2" type="text">
+                 </div>
+    
+                 <!-- Calculation -->
+                 <button id="calculate-button" class="bg-indigo-400 hover:bg-sky-700 px-8 py-2 text-white font-medium rounded-lg">Calculate</button>
+    
+                <h3 class="text-2xl font-medium mb-2 mt-8">Tota Expenses: <span id="total-expenses">00</span></h3>
+                <h3 class="text-2xl font-medium mb-8 mt-4">Balance: <span id="balance">00</span></h3>
+    
+                <!-- Save -->
+                <div class="mb-4">
+                    <span>Save :</span>
+                    <input id="save-input" class="bg-slate-200 px-2 py-2" type="text">
+                    <span>%</span>
+                    <button id="save-button" class="bg-indigo-400 hover:bg-sky-700 px-8 py-2 text-white font-medium rounded-lg">Save</button>
+                 </div>
+    
+                <h3 class="text-2xl font-medium mb-2 mt-8">Saving Amount: <span id="save-amount">00</span></h3>
+                <h3 class="text-2xl font-medium mb-8 mt-4">Remaining Balance: <span id="remaining-balance">00</span></h3>
+            </div>
         </section>
     </main>
 
