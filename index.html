@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Master</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <h1 class="text-5xl font-medium text-center mt-12 text-teal-500">Money Master</h1>
+    </header>
+    <main>
+        <section class="bg-slate-100 w-9/12 mx-auto mt-12 p-8 text-center">
+             <!-- Income -->
+             <h2 class="text-3xl font-medium mb-2">Income</h2>
+             <span>Income :</span>
+             <input id="total-income" class="bg-slate-200 px-2 py-2" type="text">
+
+             <!-- Expenses -->
+             <h2 class="text-3xl font-medium mb-2 mt-8">Expenses</h2>
+             <div class="mb-4">
+                <span>Food :</span>
+                <input id="food-expenses" class="bg-slate-200 px-2 py-2" type="text">
+             </div>
+             <div class="mb-4">
+                <span>Rent :</span>
+                <input id="rent-expenses" class="bg-slate-200 px-2 py-2" type="text">
+             </div>
+             <div class="mb-4">
+                <span>Cloth :</span>
+                <input id="cloth-expenses" class="bg-slate-200 px-2 py-2" type="text">
+             </div>
+
+             <!-- Calculation -->
+             <button id="calculate-button" class="bg-indigo-400 hover:bg-sky-700 px-8 py-2 text-white font-medium rounded-lg">Calculate</button>
+
+            <h3 class="text-3xl font-medium mb-2 mt-8">Tota Expenses: <span id="total-expenses">0</span></h3>
+            <h3 class="text-3xl font-medium mb-8 mt-4">Balance: <span id="balance">0</span></h3>
+
+            <!-- Save -->
+            <div class="mb-4">
+                <span>Save :</span>
+                <input id="save-input" class="bg-slate-200 px-2 py-2" type="text">
+                <span>%</span>
+                <button id="save-button" class="bg-indigo-400 hover:bg-sky-700 px-8 py-2 text-white font-medium rounded-lg">Save</button>
+             </div>
+
+            <h3 class="text-3xl font-medium mb-2 mt-8">Saving Amount: <span id="save-amount">0</span></h3>
+            <h3 class="text-3xl font-medium mb-8 mt-4">Remaining Balance: <span id="remaining-balance">0</span></h3>
+        </section>
+    </main>
+
+    <script src="./js/utilities.js"></script>
+   <script src="./js/app.js"></script> 
+</body>
+</html>
