@@ -9,12 +9,12 @@ document.getElementById('calculate-button').addEventListener('click', function()
     }
 
     const totalCost = foodExpenses + rentExpenses + clothExpenses;
-    seTextElementValueById('total-expenses', totalCost);
-
+    
     if(totalCost > totalIncome){
         alert ("You can't spend money more than your income");
         return;
     }
+    seTextElementValueById('total-expenses', totalCost);
 
     const newbalance = totalIncome - totalCost;
     seTextElementValueById('balance', newbalance)
