@@ -24,8 +24,8 @@ document.getElementById('save-button').addEventListener('click', function(){
     const saveInput = getInputFieldValueById('save-input');
     const newbalance = getTextElementValueById('balance');
 
-    if(saveInput > 100){
-        alert("100% over save is not possible");
+    if(isNaN(saveInput) || saveInput > 100 || saveInput < 0){
+        alert("Please enter valid number");
         return
     }
     const newSaveAmount = totalIncome * (saveInput / 100);
